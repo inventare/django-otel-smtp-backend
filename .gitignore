@@ -1,0 +1,4 @@
+.venv
+__pycache__
+build
+django_otel_smtp_backend.egg-info
