@@ -22,7 +22,7 @@ class EmailBackend(EmailBackendBase):
             span.set_attribute("fail_silently", self.fail_silently)
             span.set_attribute("connection_already_open", already_connected)
             span.set_attribute("raised", False)
-            span.set_attribute("stack", None)
+            span.set_attribute("stack", "")
 
             try:
                 opened = super().open()
@@ -32,10 +32,9 @@ class EmailBackend(EmailBackendBase):
                 span.set_attribute("connection_opened", opened)
 
                 if not self.fail_silently:
+                    stacktrace = "".join(TracebackException.from_exception(e).format())
                     span.set_attribute("raised", True)
-                    span.set_attribute(
-                        "stack", "".join(TracebackException.from_exception(e).format())
-                    )
+                    span.set_attribute("stack", stacktrace)
                     raise e
 
             return opened
