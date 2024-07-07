@@ -1,7 +1,7 @@
 [project]
 requires-python = ">= 3.8"
 name = 'django-otel-smtp-backend'
-version = '0.0.2'
+version = '0.0.3'
 description='Wraps the default Django SMTP Email Backend with trace instrumentation to the OpenTelemetry'
 dependencies = ['django>=4.2', 'opentelemetry-api']
 authors = [{name = "Eduardo Oliveira", email = "eduardo_y05@outlook.com"}]
