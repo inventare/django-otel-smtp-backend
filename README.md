@@ -3,12 +3,8 @@
 </p>
 
 <p align="center">
-  <a href="https://pypi.org/project/django-otel-smtp-backend/">
-    <img alt="PyPI - Version" src="https://img.shields.io/pypi/v/django-otel-smtp-backend"/>
-  </a>
-  <a href="https://github.com/inventare/django-otel-smtp-backend/blob/main/LICENSE">
-    <img alt="License" src="https://img.shields.io/github/license/inventare/django-otel-smtp-backend"/>
-  </a>
+<a href="https://pypi.org/project/django-otel-smtp-backend/" target="_blank"><img alt="PyPI - Version" src="https://img.shields.io/pypi/v/django-otel-smtp-backend"/></a>
+<a href="https://github.com/inventare/django-otel-smtp-backend/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/inventare/django-otel-smtp-backend"/></a>
 </p>
 
 ## Description
